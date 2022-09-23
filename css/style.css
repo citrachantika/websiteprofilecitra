@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #967E76;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #EEE3CB;
+    padding-left: 30rem;
+}
+
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+
+
+/* heading */
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #472D2D;
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.heading1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: #472D2D;
+    text-transform: uppercase;
+    border-bottom: 5px solid #472D2D;
+}
+.heading1 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+/* button tentang saya */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem  4rem;
+    background: var(--main-color);
+    color: #EEE3CB;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 2rem;
+}
+
+.btn:hover{
+    background: #472D2D;
+    padding: .9rem  6rem;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    background: #472D2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:3rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+
+header .logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+header .logo span {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+header .navbar a:hover {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+header .follow a{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 .7rem;
+}
+
+header .follow a:hover {
+    color: var(--main-color);
+}
+
+
+/* menubars */
+#menu-bars {
+    position: fixed;
+    top: 1rem; right: 1rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* menu */
+.navbar a{
+    padding: 1.7rem;
+    letter-spacing: 7px;    
+    
+}
+
+
+/* home */
+.home{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+
+.home .image img{
+    width: 95%;
+    
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .content .hai{
+    font-size: 4rem;
+    color: #967E76;
+}
+
+.home .content h3{
+    font-size: 3rem;
+    color: #472D2D;
+}
+
+.home .content h3 span{
+    color: #967E76;
+    font-size: 35px;
+}
+
+.home .content .info{
+    font-size: 2.5rem;
+    color: #472D2D;
+    padding: .5rem 0;
+}
+
+.home .content .text{
+    font-size: 1.9rem;
+    color: #472D2D;
+    padding: .5rem 0;
+}
+
+
+/* tentang saya */
+.tentangsaya .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.tentangsaya .row-1 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tentangsaya .row-1 .content{
+    flex: 1 1 50rem;
+}
+
+.tentangsaya .row-1 .content h3{
+    color: #472D2D;
+    font-size: 3.5rem;
+}
+
+.tentangsaya .row-1 .content h3 span{
+    color: #967E76;
+}
+
+.tentangsaya .row-1 .content h6{
+    color: #666;
+    font-size: 16px;
+}
+ 
+.tentangsaya .row-1 .content h5{
+    color: #967E76;
+    padding: .5rem 0;
+    font-size: 1.8rem;
+}
+
+.tentangsaya .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    padding: 0.5rem 0;
+}
+
+.tentangsaya .row-1 .content .box-container .box p{
+    font-size: 16px;
+    flex: 1 1  20rem;
+    font-weight: bold;
+}
+
+.tentangsaya .row-1 .content .box-container .box span{
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.tentangsaya .row-1 .content span{
+    font-size: 30px;
+}
+
+.tentangsaya .row-1 .content h1{
+    font-size: 30px;
+}
+
+.tentangsaya .row-1 .content p{
+    color: #666;
+    font-size: 1.3rem;
+    padding: .5rem;
+    border-bottom: 1px solid #967E76
+}
+
+.tentangsaya .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.tentangsaya .row-2 .skills{
+    flex: 1 1 40rem;
+}
+
+.tentangsaya .row-2 .progress{
+    padding: 1rem 0;
+}
+
+.tentangsaya .row-2 .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #472D2D;
+    font-weight: 400;
+}
+
+.tentangsaya .row-2 .progress span{
+    font-size: 15px;
+}
+
+.tentangsaya .row-2 .progress .bar{
+    width: 100%;
+    background: #967E76;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+
+.tentangsaya .row-2 .progress .bar span{
+    display: block;
+    height: 100%;
+    background-color: #472D2D;
+}
+
+
+.tentangsaya .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 75%;
+}
+
+.tentangsaya .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 50%;
+}
+
+.tentangsaya .row-2 .skills .progress:nth-child(3) .bar span{
+    width: 30%;
+}
+
+/* pendidikan */
+.education .box-container{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.education .box-container .box{
+    position: relative;
+    flex: 1 1 19rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.education .box-container .box:before{
+    content: '';
+    position: absolute;
+    top: 0; left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.education .box-container .box:after{
+    content: '';
+    position: absolute;
+    top: -1; left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.education .box-container .box .content{
+    background: #dfd2b5;
+    padding:1.5rem;
+    box-shadow: 0 .5rem 9rem rgba(0,0,0,0);
+    border-radius: .5rem;
+}
+
+.education .box-container .box .content:hover{
+    background: #967E76
+    
+}
+
+/* pengalaman */
+.education .box-container2{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.education .box-container2 .box{
+    position: relative;
+    flex: 1 1 100rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.education .box-container2 .box:before{
+    content: '';
+    position: absolute;
+    top: 0; left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.education .box-container2 .box:after{
+    content: '';
+    position: absolute;
+    top: -1; left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.education .box-container2 .box .content{
+    background: #dfd2b5;
+    padding:1.5rem;
+    box-shadow: 0 .5rem 5rem rgba(0,0,0,0);
+    border-radius: .5rem;
+}
+
+.education .box-container2 .box .content:hover{
+    background: #967E76
+}
+
+
+
+/* heading 3 */
+.heading3{
+    font-size: 4rem;
+    padding-left: 40px;
+    padding-bottom: 1rem;
+    color: #472D2D;
+    text-transform: uppercase;
+    border-bottom: 5px solid #472D2D;
+}
+.heading3 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* portofolio */
+.portofolio .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.portofolio .box-container .boxportofolio{
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid #dfd2b5;
+}
+
+.portofolio .box-container .boxportofolio img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* kontak */
+.kontak .box-container{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.kontak .box-container .boxkontak{
+    position: relative;
+    flex: 1 1 40rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.kontak .box-container .boxkontak .content{
+    background: #dfd2b5;
+    padding:1.5rem;
+    box-shadow: 0 .5rem 9rem rgba(0,0,0,0);
+    border-radius: .5rem;
+}
+
+.kontak .box-container .boxkontak .content i{
+    font-size: 2rem;
+}
+
+.kontak .box-container .boxkontak .content:hover{
+    background: #967E76
+    
+}
+
+.kontak .box-container .boxkontak a{
+    color: #472D2D;
+    text-decoration: underline;
+}
+
+
+/* footer */
+footer{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: #967E76;
+}
+
+
+footer span{
+    color: #472D2D;
+}
+
+/* js */
+@media (max-width:991px){
+
+    html {
+        font-size: 55%;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+        left: -120%;
+    }
+
+    header.active{
+        left: 0%;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        width: 100%;
+    }
+}
+
+
+
+
